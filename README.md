@@ -1,5 +1,5 @@
 If any issues are faced like the code is faulty or any such issue, please clone the repository from the following link using this command: 
-git clone "https://github.com/akashopp/DSA-Project.git"
+git clone "https://github.com/akashopp/DSA_Project.git"
 
 chatbot section:
 CHATBOT STEPS       
@@ -13,7 +13,8 @@ CHATBOT STEPS
 8) now that the server is running try fetching a response from here  
 
 steps to set-up few things in order to get the project running:
-cd frontend and run the command: npm -i force
+open a terminal and run "cd frontend && npm -i force && npm run dev"
+open another terminal and run "cd backend && npm -i && npm run dev"
 1. GROQ API Key (Sanity.io)
 If your project uses Sanity.io and you need to query content using GROQ, follow these steps to generate an API token:
 
@@ -28,40 +29,5 @@ Give the token a name and assign Read access (or appropriate permissions).
 
 Copy the generated token.
 
-Add to .env file:
+Add to .env file (under Chatbot folder):
 GROQ_SPI_KEY
-2. MongoDB Connection String
-You can connect to MongoDB either locally or using MongoDB Atlas (cloud-based). Update the .env file with the appropriate URI.
-
-Local MongoDB Setup
-
-MongoDB Atlas Setup
-Sign in at https://cloud.mongodb.com.
-
-Create a cluster if you haven't already.
-
-Add your IP address under Network Access (or use 0.0.0.0/0 for unrestricted access during development).
-
-Create a database user with a username and password.
-
-Click Connect > Connect your application, and copy the connection string.
-
-Replace <username>, <password>, and <dbname> with your actual values:
-
-ini
-Copy
-Edit
-MONGODB_URI=mongodb+srv://<username>:<password>@cluster0.mongodb.net/<dbname>?retryWrites=true&w=majority
-Example .env File
-ini
-Copy
-Edit
-# GROQ/Sanity
-GROQ_API_KEY=""
- in OUR CASE THE STRING IS ALREADY PRESENT
-# MongoDB
-MONGODB_URI=mongodb://localhost:27017/mydatabase
-# or for MongoDB Atlas:
-# MONGODB_URI=mongodb+srv://username:password@cluster0.mongodb.net/mydatabase
-Make sure not to commit your .env file to version control. Add .env to your .gitignore file to keep your credentials safe.
-
