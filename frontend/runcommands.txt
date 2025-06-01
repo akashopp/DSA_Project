@@ -1,0 +1,1 @@
+npm install react react-dom @uiw/react-codemirror @codemirror/lang-javascript @codemirror/lang-cpp @codemirror/lang-java @codemirror/lang-python @codemirror/theme-one-dark @uiw/codemirror-theme-dracula @uiw/codemirror-theme-monokai @uiw/codemirror-theme-github lucide-react

@@ -1,0 +1,35 @@
+/* src/index.css or src/App.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for status indicators */
+.transition-all {
+  transition: background-color 0.3s ease;
+}
+
+/* Custom colors for test case statuses */
+.bg-yellow-300 {
+  background-color: #fde68a; /* Lighter yellow */
+}
+
+.bg-green-500 {
+  background-color: #22c55e; /* Success green */
+}
+
+.bg-red-500 {
+  background-color: #ef4444; /* Error red */
+}
+
+.bg-blue-500 {
+  background-color: #3b82f6; /* Compile error blue */
+}
+
+.bg-orange-500 {
+  background-color: #f97316; /* Runtime error orange */
+}
+
+body{
+  background-color: rgb(35, 34, 34);
+}
